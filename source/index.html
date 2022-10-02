@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.min.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="images/favicon/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicon/152.svg"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="./fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <title>Главная страница</title>
+</head>
+
+<body class="page__body">
+  <header class="header header__navigation header__navigation--closed header__navigation--nojs">
+    <div class="header__logo logo">
+      <a class="logo__link" href="index.html" aria-label="Логотип интернет-магазина кофейных напитков.">
+        <svg class="logo__img logo__img--logo-mobile" width="32" height="36">
+          <use xlink:href="./images/svg-sprite/sprite.svg#logo-mobile"></use>
+        </svg>
+        <svg class="logo__img logo__img--logo-tablet" width="82" height="36">
+          <use xlink:href="./images/svg-sprite/sprite.svg#logo-tablet"></use>
+        </svg>
+        <svg class="logo__img logo__img--logo-desktop"width="170" height="36">
+          <use xlink:href="./images/svg-sprite/sprite.svg#logo-desktop"></use>
+        </svg>
+      </a>
+      <p class="logo__description">Интернет-магазин кофейных напитков</p>
+    </div>
+    <nav class="header__main-nav main-nav">
+      <ul class="main-nav__list main-nav__site-list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--active" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class=" site-list__link" href="#">Каталог</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Доставка</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">О нас</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__user-menu user-menu">
+      <ul class="user-menu__user-list user-list">
+        <li class="user-list__item">
+          <a class="user-list__link" href="#">
+            <svg class="user-list__icon user-list__icon--user" width="16" height="16">
+              <use xlink:href="./images/svg-sprite/sprite.svg#user"></use>
+            </svg>
+            <span class="user-list__description">Войти</span>
+          </a>
+        </li>
+        <li class="user-list__item">
+          <a class="user-list__link" href="#">
+            <svg class="user-list__icon user-list__icon--basket" width="16" height="16">
+              <use xlink:href="./images/svg-sprite/sprite.svg#basket"></use>
+            </svg>
+            <span class="user-list__description">Корзина</span>
+          </a>
+        </li>
+      </ul>
+      <button class="header__toggle user-menu__toggle" type="button">
+        <span class="visually-hidden">Открыть/закрыть меню</span>
+      </button>
+    </div>
+  </header>
+  <main class="page__main">
+    <h1 class="visually-hidden">Интернет-магазин кофейных напитков Drink2Go</h1>
+    <section class="slider">
+      <h2 class="visually-hidden">Новинки и специальные предложения</h2>
+      <div class="swiper my-swiper">
+        <div class="slider__wrapper swiper-wrapper">
+          <div class="slider__slide slider__slide--flat-white swiper-slide slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="./images/flat-white-desktop.webp 1x, ./images/flat-white-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./images/flat-white-tab.webp 1x, ./images/flat-white-tab@2x.webp 2x">
+              <source type="image/webp" srcset="./images/flat-white-img.webp 1x, ./images/flat-white-img@2x.webp 2x">
+
+              <source media="(min-width: 1440px)" srcset="./images/flat-white-desktop.jpg 1x, ./images/flat-white-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./images/flat-white_tab.jpg 1x, ./images/flat-white-tab@2x.jpg 2x">
+              <img class="slide__image" src="./images/flat-white-img.png" srcset="./images/flat-white-img@2x.png 2x"  width="280" height="280" alt="Декаф Флэт Уайт">
+            </picture>
+            <span class="badge slide__badge">Новинка!</span>
+            <h3 class="slide__title">Декаф Флэт Уайт</h3>
+            <p class="slide__description">Свежесваренный кофе без кофеина из Эфиопии&nbsp;<br class="showontablet">с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+            <div class="slide__sale">
+              <span class="slide__old-price">295₽</span>
+              <span class="slide__new-price">225₽</span>
+              <button class="button slide__button">Заказать</button>
+            </div>
+          </div>
+          <div class="slider__slide slider__slide--lavender swiper-slide slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="./images/lavender-desktop.webp 1x, ./images/lavender-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./images/lavender-tab.webp 1x, ./images/lavender-tab@2x.webp 2x">
+              <source type="image/webp" srcset="./images/lavender-img.webp 1x, ./images/lavender-img@2x.webp 2x">
+
+              <source media="(min-width: 1440px)" srcset="./images/lavender-desktop.jpg 1x, ./images/lavender-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./images/lavender-tab.jpg 1x, ./images/lavender-tab@2x.jpg 2x">
+              <img class="slide__image" src="./images/lavender-img.png" srcset="./images/lavender-img@2x.png 2x"  width="280" height="280" alt="Декаф Флэт Уайт">
+            </picture>
+            <span class="badge slide__badge">Новинка!</span>
+            <h3 class="slide__title">Лавандовый Латте</h3>
+            <p class="slide__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+            <div class="slide__sale">
+              <span class="slide__old-price">285₽</span>
+              <span class="slide__new-price">265₽</span>
+              <button class="button slide__button">Заказать</button>
+            </div>
+          </div>
+          <div class="slider__slide slider__slide--espresso swiper-slide slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="./images/espresso-desktop.webp 1x, ./images/espresso-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./images/espresso-tab.webp 1x, ./images/espresso-tab@2x.webp 2x">
+              <source type="image/webp" srcset="./images/espresso-img.webp 1x, ./images/espresso-img@2x.webp 2x">
+
+              <source media="(min-width: 1440px)" srcset="./images/espresso-desktop.jpg 1x, ./images/espresso-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./images/espresso-tab.jpg 1x, ./images/espresso-tab@2x.jpg 2x">
+              <img class="slide__image" src="./images/espresso-img.png" srcset="./images/espresso-img@2x.png 2x"  width="280" height="280" alt="Декаф Флэт Уайт">
+            </picture>
+            <span class="badge slide__badge">Новинка!</span>
+            <h3 class="slide__title">Тройной Эспрессо</h3>
+            <p class="slide__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+            <div class="slide__sale">
+              <span class="slide__old-price">395₽</span>
+              <span class="slide__new-price">375₽</span>
+              <button class="button slide__button">Заказать</button>
+            </div>
+          </div>
+        </div>
+        <div class="slider__pagination swiper-pagination"></div>
+        <div class="slider__button slider__button--next swiper-button-next">
+          <svg class="slider__arrow" width="11" height="20" viewBox="0 0 11 20">
+            <use xlink:href="./images/sprite.svg#slider-arrow"></use>
+          </svg>
+        </div>
+        <div class="slider__button slider__button--prev swiper-button-prev">
+          <svg class="slider__arrow" width="11" height="20" viewBox="0 0 11 20">
+            <use xlink:href="./images/sprite.svg#slider-arrow"></use>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+
+  </footer>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
