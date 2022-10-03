@@ -1,0 +1,48 @@
+.pagination-button {
+  position: absolute;
+  top: 630px;
+  left: 50%;
+  display: none;
+  width: 202px;
+  height: 24px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.pagination-button > .pagination-button__slider {
+  width: 62px;
+  height: 4px;
+}
+
+.pagination-button__slider {
+  position: relative;
+  width: 62px;
+  height: 24px;
+  margin: 0 8px 0 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination-button__slider:last-child {
+  margin: 0;
+}
+
+.pagination-button__slider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 64px;
+  height: 4px;
+  background-color: $base-white;
+}
+
+.pagination-button .pagination-button__slider--current::after {
+  background-color: $base-primary;
+}
