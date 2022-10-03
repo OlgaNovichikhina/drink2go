@@ -22,9 +22,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: $base-black;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     color: $base-primary;
     outline: none;
     fill: $base-primary;

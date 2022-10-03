@@ -75,7 +75,7 @@
   </header>
   <main class="page__main">
     <h1 class="visually-hidden">Интернет-магазин кофейных напитков Drink2Go.</h1>
-    <section class="slider my-slider">
+    <section class="slider">
       <h2 class="visually-hidden">Новинки и специальные предложения.</h2>
       <!-- Slider main container -->
       <div class="swiper">
@@ -93,7 +93,7 @@
             </picture>
             <span class="slide__new new">Новинка!</span>
             <h3 class="slide__title">Декаф Флэт Уайт</h3>
-            <p class="slide__description">Свежесваренный кофе без кофеина из Эфиопии&nbsp;<br class="showontablet">с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+            <p class="slide__description">Свежесваренный кофе без кофеина из Эфиопии&nbsp;с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
             <div class="slide__sale sale">
               <span class="slide__old-price">295₽</span>
               <span class="slide__new-price">225₽</span>
@@ -136,17 +136,8 @@
             </div>
           </div>
         </div>
-        <!-- If we need navigation buttons -->
-        <div class="my-slider__pagination swiper-pagination pagination-button slider__pagination-slider pagination-slider">
-          <button class="my-slider__button pagination-button__slider pagination-button__slider--current pagination-slider__button" type="button">
-            <span class="visually-hidden">Первый товар.</span>
-          </button>
-          <button class="pagination-button__slider" type="button">
-            <span class="visually-hidden">Второй товар.</span>
-          </button>
-          <button class="pagination-button__slider" type="button">
-            <span class="visually-hidden">Третий товар.</span>
-          </button>
+        <div class="swiper-pagination">
+          <span class="visually-hidden">Пагинация</span>
         </div>
         <div class="swiper-button-prev slider__button slider__button--prev">
           <svg class="slider__arrow" width="11" height="20">
@@ -158,6 +149,34 @@
             <use xlink:href="./images/svg-sprite/sprite.svg#slider-arrow"></use>
           </svg>
         </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="advantages__wrapper">
+        <span class="advantages__promo">Преимущества</span>
+        <h2 class="advantages__title">Главные причины выбрать Drink2Go</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--speed">
+            <h3 class="advantages__name">Скорость</h3>
+            <p class="advantages__description">Готовый напиток всегда под рукой — просто открой банку</p>
+          </li>
+          <li class="advantages__item advantages__item--convenience">
+            <h3 class="advantages__name">Удобство</h3>
+            <p class="advantages__description">Легко помещается и в карман, и в маленькую сумочку
+            </p>
+          </li>
+          <li class="advantages__item advantages__item--cheerfulness">
+            <h3 class="advantages__name">Бодрость</h3>
+            <p class="advantages__description">Сбалансированная доза кофеина даст мощный заряд энергии
+            </p>
+          </li>
+          <li class="advantages__item advantages__item--eco-friendly">
+            <h3 class="advantages__name">Экологичность</h3>
+            <p class="advantages__description">Вся упаковка сделана<br>
+              из перерабатываемых материалов
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
   </main>

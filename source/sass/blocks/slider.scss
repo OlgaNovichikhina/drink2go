@@ -45,35 +45,6 @@
   }
 }
 
-.slider__pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 65px;
-}
-
-.slider__pagination .swiper-pagination-bullet {
-  width: 62px;
-  height: 4px;
-  background-color: $base-white;
-  border: none;
-  border-radius: 0%;
-  opacity: 1;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: rgba($base-primary, 0.25);
-  }
-}
-
-.slider__pagination .swiper-pagination-bullet-active {
-  background-color: $base-primary;
-  cursor: auto;
-
-  &:hover,
-  &:focus {
-    background-color: $base-primary;
-  }
-}
-
 .slider__button.swiper-button-next,
 .slider__button.swiper-button-prev {
   position: absolute;
