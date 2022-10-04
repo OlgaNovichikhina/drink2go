@@ -139,6 +139,7 @@
   &:hover,
   &:focus-visible {
     background: $primary-lighter;
+    outline: none;
   }
 
   &:active {

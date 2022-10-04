@@ -1,0 +1,165 @@
+.range {
+  position: relative;
+  max-width: 280px;
+  margin-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    width: 220px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+  }
+}
+
+.range__scale {
+  position: relative;
+  width: 280px;
+  height: 2px;
+  margin-bottom: 35px;
+  background-color: $light-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 220px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+  }
+}
+
+.range__bar {
+  position: absolute;
+  top: -1px;
+  width: 241px;
+  height: 4px;
+  background-color: $primary-lighter;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 274px;
+  }
+}
+
+.range__toggle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: $base-white;
+  background-image: url("../../images/range-default.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-image: url("../../images/radio-range-hover-focus.svg");
+  }
+
+  &:active {
+    background-image: url("../../images/radio-range-active-checked.svg");
+  }
+
+  &:disabled {
+    background-image: url("../../images/radio-range-disabled-unchecked.svg;");
+  }
+}
+
+.range__toggle--min {
+  top: -10px;
+  left: 0;
+}
+
+.range__toggle--max {
+  top: -10px;
+  left: 220px;
+
+  @media (min-width: $tablet-width) {
+    left: 180px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 270px;
+  }
+}
+
+.range__wrapper-inputs {
+  position: relative;
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 220px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+  }
+}
+
+.range__wrapper-inputs::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 135px;
+  width: 9px;
+  height: 2px;
+  background-color: $base-grey;
+
+  @media (min-width: $tablet-width) {
+    left: 105px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 155px;
+  }
+}
+
+.range__input {
+  width: 118px;
+  height: 38px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  border: 2px solid $primary-lighter;
+  border-radius: 4px;
+  outline: none;
+
+  &::placeholder {
+    color: $base-grey;
+  }
+
+  &:focus-within,
+  &:active {
+    border: 2px solid $primary-darker;
+  }
+
+  &:disabled {
+    border: 2px solid $light-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+  }
+}
+
+.range__input[type="number"]::-webkit-outer-spin-button,
+.range__input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;/* stylelint-disable-line */ /* Скрываем слайдер, чтобы иметь возможность создать пользовательский слайдер. */
+}
+
+.range__input[type="number"] {
+  -moz-appearance: textfield;/* stylelint-disable-line */
+}
