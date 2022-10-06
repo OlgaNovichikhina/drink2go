@@ -16,10 +16,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 180px 80px 242px 735px;
+    padding: 180px 80px 242px 45%;
     text-align: left;
     align-items: start;
   }
+}
+
+.slide__wrapper {
+  position: relative;
+  max-width: 1440px;
 }
 
 .slide__image {
@@ -31,14 +36,14 @@
     width: 476px;
     height: 476px;
     position: absolute;
-    top: 352px;
+    top: 288px;
     left: calc(50% - 238px);
     z-index: 5;
   }
 
   @media (min-width: $desktop-width) {
-    top: 30px;
-    left: 105px;
+    top: -155px;
+    left: -623px;
     width: 600px;
     height: 600px;
   }

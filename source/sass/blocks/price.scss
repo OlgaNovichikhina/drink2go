@@ -1,0 +1,35 @@
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price__cost {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.price__button {
+  width: 141px;
+  height: 35px;
+  padding: 0 20px 0 46px;
+  font-size: 14px;
+  line-height: 20px;
+  background: url("../../images/to-backet.svg") no-repeat 20px;
+  background-color: $base-primary;
+  color: $base-white;
+  outline: none;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $base-grey;
+  }
+}
