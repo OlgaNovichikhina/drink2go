@@ -4,14 +4,7 @@
   list-style: none;
   display: flex;
   gap: 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 304px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 936px;
-  }
+  justify-content: flex-end;
 }
 
 .pagination__link {
@@ -20,6 +13,7 @@
   justify-content: center;
   width: 40px;
   height: 40px;
+  border-radius: 4px;
   background-color: $base-white;
   text-align: center;
   vertical-align: middle;
@@ -28,9 +22,10 @@
   color: $base-primary;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: $primary-lighter;
     color: $base-white;
+    outline: none;
   }
 
   &:active {
@@ -39,26 +34,6 @@
 
   &:disabled {
     background-color: $light-grey;
-  }
-}
-
-.pagination__item--current .pagination__link {
-  background-color: $lightest-grey;
-  font-weight: 600;
-  color: $base-black;
-}
-
-.pagination__item:first-child .pagination__link {
-  @media (min-width: $tablet-width) {
-    width: 140px;
-    margin-right: -20px;
-  }
-}
-
-.pagination__item:last-child .pagination__link {
-  @media (min-width: $tablet-width) {
-    width: 140px;
-    margin-left: -20px;
   }
 }
 
@@ -86,6 +61,32 @@
   }
 }
 
+.pagination__link:hover .pagination__text::before,
+.pagination__link:focus-visible .pagination__text::before {
+  background-image: url("../../images/pagination-arrow-white.svg");
+  outline: none;
+}
+
+.pagination__item--current .pagination__link {
+  background-color: $lightest-grey;
+  font-weight: 600;
+  color: $base-black;
+}
+
+.pagination__item:first-child .pagination__link {
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    margin-right: -20px;
+  }
+}
+
+.pagination__item:last-child .pagination__link {
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    margin-left: -20px;
+  }
+}
+
 .pagination__text--prev {
   @media (min-width: $tablet-width) {
     left: 4px;
@@ -95,16 +96,6 @@
 .pagination__text--next::before {
   transform: rotate(-180deg);
   left: -2px;
-}
-
-
-.pagination__link:hover,
-.pagination__link:focus,
-.pagination__link:active,
-.pagination__link:disabled {
-  .pagination__text::before {
-    background-image: url("../../images/pagination-arrow.svg");
-  }
 }
 
 .pagination__item--disabled {
