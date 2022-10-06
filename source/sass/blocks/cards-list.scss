@@ -1,0 +1,16 @@
+.cards-list__sorting {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+    padding: 0;
+  }
+}

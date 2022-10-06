@@ -49,7 +49,7 @@
   width: 24px;
   height: 24px;
   background-color: $base-white;
-  background-image: url("../../images/range-default.svg");
+  background-image: url("../../images/radio-checkbox-toggle/range-default.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -57,15 +57,15 @@
 
   &:hover,
   &:focus {
-    background-image: url("../../images/radio-range-hover-focus.svg");
+    background-image: url("../../images/radio-checkbox-toggle/radio-range-hover-focus.svg");
   }
 
   &:active {
-    background-image: url("../../images/radio-range-active-checked.svg");
+    background-image: url("../../images/radio-checkbox-toggle/radio-range-active-checked.svg");
   }
 
   &:disabled {
-    background-image: url("../../images/radio-range-disabled-unchecked.svg;");
+    background-image: url("../../images/radio-checkbox-toggle/radio-range-disabled-unchecked.svg;");
   }
 }
 

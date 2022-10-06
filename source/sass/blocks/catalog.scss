@@ -81,17 +81,12 @@
 .catalog__item {
   display: flex;
   flex-direction: column;
-  height: 420px;
   margin: 0 0 20px;
   padding: 40px 20px 20px;
   box-sizing: border-box;
   font-size: 14px;
   list-style-type: none;
   background-color: $base-white;
-
-  @media (min-width: $tablet-width) {
-    height: 440px;
-  }
 }
 
 .catalog__item:last-child {

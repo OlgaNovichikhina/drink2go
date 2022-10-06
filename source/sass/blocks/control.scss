@@ -24,7 +24,7 @@
 /*поведение focus and hover*/
 .control__input:hover + .control__check-box,
 .control__input:focus-visible + .control__check-box {
-  background-image: url("../../images/check-box-focus-hover.svg");
+  background-image: url("../../images/radio-checkbox-toggle/check-box-focus-hover.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -32,22 +32,22 @@
 
 /*поведение disabled unchecked*/
 .control__input:disabled + .control__check-box {
-  background-image: url("../../images/check-box-disabled-unchecked.svg");
+  background-image: url("../../images/radio-checkbox-toggle/check-box-disabled-unchecked.svg");
 }
 
 /*поведение disabled checked*/
 .control__input:disabled:checked + .control__check-box {
-  background-image: url("../../images/check-box-disabled-checked.svg");
+  background-image: url("../../images/radio-checkbox-toggle/check-box-disabled-checked.svg");
 }
 
 .control__input:checked + .control__check-box {
-  background-image: url("../../images/check-box-checked.svg");
+  background-image: url("../../images/radio-checkbox-toggle/check-box-checked.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .control__input + .control__check-box {
-  background-image: url("../../images/check-box-unchecked.svg");
+  background-image: url("../../images/radio-checkbox-toggle/check-box-unchecked.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -67,12 +67,12 @@
 
 /*поведение default checked*/
 .control__input:checked + .control__radio {
-  background-image: url("../../images/radio-range-active-checked.svg");
+  background-image: url("../../images/radio-checkbox-toggle/radio-range-active-checked.svg");
 }
 
 /*поведение default unchecked*/
 .control__input + .control__radio {
-  background-image: url("../../images/radio-range-default.svg");
+  background-image: url("../../images/radio-checkbox-toggle/radio-range-default.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -81,7 +81,7 @@
 /*поведение focus and hover*/
 .control__input:hover + .control__radio,
 .control__input:focus-visible + .control__radio {
-  background-image: url("../../images/radio-range-hover-focus.svg");
+  background-image: url("../../images/radio-checkbox-toggle/radio-range-hover-focus.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -89,10 +89,10 @@
 
 /*поведение disabled unchecked*/
 .control__input:disabled + .control__radio {
-  background-image: url("../../images/radio-range-disabled-unchecked.svg");
+  background-image: url("../../images/radio-checkbox-toggle/radio-range-disabled-unchecked.svg");
 }
 
 /*поведение disabled checked*/
 .control__input:disabled:checked + .control__radio {
-  background-image: url("../../images/radio-range-disabled-checked.svg");
+  background-image: url("../../images/radio-checkbox-toggle/radio-range-disabled-checked.svg");
 }

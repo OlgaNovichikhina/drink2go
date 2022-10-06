@@ -1,0 +1,44 @@
+.sorting__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 18px;
+  }
+}
+
+.sorting__input {
+  appearance: none;
+  width: 159px;
+  height: 32px;
+  outline: none;
+  border: none;
+  text-transform: lowercase;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: $base-primary;
+  background-color: transparent;
+
+  &--closed {
+    background-image: url("../../images/arrow-down.svg");
+    background-position: center right 19px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $base-secondary;
+  }
+
+  &:active,
+  &--opened {
+    background-image: url("../../images/arrow-up.svg");
+    background-position: center right 19px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+}

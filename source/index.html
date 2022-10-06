@@ -286,184 +286,169 @@
               <button class="form__reset button button--reset" type="reset">Сбросить фильтр</button>
             </div>
           </form>
+
           <section class="catalog__cards-list cards-list">
-            <h3 class="visually-hidden">Сортировка товаров</h3>
-            <div class="cards-list__sorting-container sorting-container">
-              <span class="sorting-container__text">Сортировка:</span>
-              <select class="sorting-container__select-control">
-                <option value="default">по умолчанию</option>
-                <option value="dear-ones-first">сначала дорогие</option>
-                <option value="cheap-ones-first">сначала дешёвые</option>
-                <option value="high-rating">высокий рейтинг</option>
-              </select>
+            <h2 class="visually-hidden">Товары.</h2>
+            <div class="cards-list__wrapper">
+              <div class="cards-list__sorting sorting">
+                <h3 class="sorting__title">Сортировка:</h3>
+                <label class="visually-hidden" for="sorting__input">Категория сортировки</label>
+                <!-- класс sorting__input--opened отвечает за отображение стрелочки при открытом меню (стрелка смотрит вверх)-->
+                <!-- класс sorting__input--closed отвечает за отображение стрелочки при закрытом меню (стрелка смотрит вниз)-->
+                <select class="sorting__input sorting__input--closed" name="sorting__input" id="sorting__input">
+                  <option value="default" selected>по умолчанию</option>
+                  <option value="expensive">сначала дорогие</option>
+                  <option value="cheap">сначала дешёвые</option>
+                  <option value="high-rating">высокий рейтинг</option>
+                </select>
+              </div>
+              <ul class="catalog__list">
+                <!--1 карточка-->
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">
+                    <picture>
+                      <source media="(min-width: 1440px)" type="image/webp" srcset="./images/cards/coffee-can-1-desktop.webp 1x, ./images/cards/coffee-can-1-desktop@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="./images/cards/coffee-can-1-desktop.jpg 1x, ./images/cards/coffee-can-1-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" type="image/webp" srcset="./images/cards/coffee-can-1-tablet.webp 1x, ./images/cards/coffee-can-1-tablet@2x.webp 2x">
+                      <source media="(min-width: 768px)" srcset="./images/cards/coffee-can-1-tablet.jpg 1x, ./images/cards/coffee-can-1-tablet@2x.jpg 2x">
+                      <source media="(min-width: 320px)" type="image/webp" srcset="./images/cards/coffee-can-1-mobile.webp 1x, ./images/cards/coffee-can-1-mobile@2x.webp 2x">
+                      <img class="cards__image" src="./images/cards/coffee-can-1-mobile.jpg" srcset="./images/cards/coffee-can-1-mobile@2x.jpg 2x" alt="Кофе с фермерским молоком." width="280" height="280">
+                    </picture>
+                    <span class="catalog__product-name">Декаф Флэт Уайт</span>
+                  </a>
+                  <p class="catalog__item-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <div class="catalog__item-price price">
+                    <span class="price__cost">225₽</span>
+                    <button class="price__button button">
+                      <svg class="price__button--icon-add-cart" aria-hidden="true" focusable="false" width="20" height="16">
+                        <use xlink:href="./images/svg-sprite/sprite.svg#add-cart"></use>
+                      </svg>
+                      В корзину
+                    </button>
+                  </div>
+                </li>
+                <!--2 карточка-->
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">
+                    <picture>
+                      <source media="(min-width: 1440px)" type="image/webp" srcset="./images/cards/coffee-can-2-desktop.webp 1x, ./images/cards/coffee-can-2-desktop@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="./images/cards/coffee-can-2-desktop.jpg 1x, ./images/cards/coffee-can-2-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" type="image/webp" srcset="./images/cards/coffee-can-2-tablet.webp 1x, ./images/cards/coffee-can-2-tablet@2x.webp 2x">
+                      <source media="(min-width: 768px)" srcset="./images/cards/coffee-can-2-tablet.jpg 1x, ./images/cards/coffee-can-2-tablet@2x.jpg 2x">
+                      <source media="(min-width: 320px)" type="image/webp" srcset="./images/cards/coffee-can-2-mobile.webp 1x, ./images/cards/coffee-can-2-mobile@2x.webp 2x">
+                      <img class="cards__image" src="./images/cards/coffee-can-2-mobile.jpg" srcset="./images/cards/coffee-can-2-mobile@2x.jpg 2x" alt="Кофе с фермерским молоком." width="280" height="280">
+                    </picture>
+                    <span class="catalog__product-name">Декаф Флэт Уайт</span>
+                  </a>
+                  <p class="catalog__item-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <div class="catalog__item-price price">
+                    <span class="price__cost">225₽</span>
+                    <button class="price__button button"><!--
+                      <svg class="price__button--icon-add-cart" aria-hidden="true" focusable="false" width="20" height="16">
+                        <use xlink:href="img/sprite.svg#add-cart"></use>
+                      </svg>-->
+                      В корзину
+                    </button>
+                  </div>
+                </li>
+                <!--3 карточка-->
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">
+                    <picture>
+                      <source media="(min-width: 1440px)" type="image/webp" srcset="./images/cards/coffee-can-3-desktop.webp 1x, ./images/cards/coffee-can-3-desktop@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="./images/cards/coffee-can-3-desktop.jpg 1x, ./images/cards/coffee-can-3-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" type="image/webp" srcset="./images/cards/coffee-can-3-tablet.webp 1x, ./images/cards/coffee-can-3-tablet@2x.webp 2x">
+                      <source media="(min-width: 768px)" srcset="./images/cards/coffee-can-3-tablet.jpg 1x, ./images/cards/coffee-can-3-tablet@2x.jpg 2x">
+                      <source media="(min-width: 320px)" type="image/webp" srcset="./images/cards/coffee-can-3-mobile.webp 1x, ./images/cards/coffee-can-3-mobile@2x.webp 2x">
+                      <img class="cards__image" src="./images/cards/coffee-can-3-mobile.jpg" srcset="./images/cards/coffee-can-3-mobile@2x.jpg 2x" alt="Кофе с фермерским молоком." width="280" height="280">
+                    </picture>
+                    <span class="catalog__product-name">Декаф Флэт Уайт</span>
+                  </a>
+                  <p class="catalog__item-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <div class="catalog__item-price price">
+                    <span class="price__cost">225₽</span>
+                    <button class="price__button button"><!--
+                      <svg class="price__button--icon-add-cart" aria-hidden="true" focusable="false" width="20" height="16">
+                        <use xlink:href="img/sprite.svg#add-cart"></use>
+                      </svg>-->
+                      В корзину
+                    </button>
+                  </div>
+                </li>
+                <!--4 карточка-->
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">
+                    <picture>
+                      <source media="(min-width: 1440px)" type="image/webp" srcset="./images/cards/coffee-can-4-desktop.webp 1x, ./images/cards/coffee-can-4-desktop@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="./images/cards/coffee-can-4-desktop.jpg 1x, ./images/cards/coffee-can-4-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" type="image/webp" srcset="./images/cards/coffee-can-4-tablet.webp 1x, ./images/cards/coffee-can-4-tablet@2x.webp 2x">
+                      <source media="(min-width: 768px)" srcset="./images/cards/coffee-can-4-tablet.jpg 1x, ./images/cards/coffee-can-4-tablet@2x.jpg 2x">
+                      <source media="(min-width: 320px)" type="image/webp" srcset="./images/cards/coffee-can-4-mobile.webp 1x, ./images/cards/coffee-can-4-mobile@2x.webp 2x">
+                      <img class="cards__image" src="./images/cards/coffee-can-4-mobile.jpg" srcset="./images/cards/coffee-can-4-mobile@2x.jpg 2x" alt="Кофе с фермерским молоком." width="280" height="280">
+                    </picture>
+                    <span class="catalog__product-name">Декаф Флэт Уайт</span>
+                  </a>
+                  <p class="catalog__item-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <div class="catalog__item-price price">
+                    <span class="price__cost">225₽</span>
+                    <button class="price__button button"><!--
+                      <svg class="price__button--icon-add-cart" aria-hidden="true" focusable="false" width="20" height="16">
+                        <use xlink:href="img/sprite.svg#add-cart"></use>
+                      </svg>-->
+                      В корзину
+                    </button>
+                  </div>
+                </li>
+                <!--5 карточка-->
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">
+                    <picture>
+                      <source media="(min-width: 1440px)" type="image/webp" srcset="./images/cards/coffee-can-5-desktop.webp 1x, ./images/cards/coffee-can-5-desktop@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="./images/cards/coffee-can-5-desktop.jpg 1x, ./images/cards/coffee-can-5-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" type="image/webp" srcset="./images/cards/coffee-can-5-tablet.webp 1x, ./images/cards/coffee-can-5-tablet@2x.webp 2x">
+                      <source media="(min-width: 768px)" srcset="./images/cards/coffee-can-5-tablet.jpg 1x, ./images/cards/coffee-can-5-tablet@2x.jpg 2x">
+                      <source media="(min-width: 320px)" type="image/webp" srcset="./images/cards/coffee-can-5-mobile.webp 1x, ./images/cards/coffee-can-5-mobile@2x.webp 2x">
+                      <img class="cards__image" src="./images/cards/coffee-can-5-mobile.jpg" srcset="./images/cards/coffee-can-5-mobile@2x.jpg 2x" alt="Кофе с фермерским молоком." width="280" height="280">
+                    </picture>
+                    <span class="catalog__product-name">Декаф Флэт Уайт</span>
+                  </a>
+                  <p class="catalog__item-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <div class="catalog__item-price price">
+                    <span class="price__cost">225₽</span>
+                    <button class="price__button button"><!--
+                      <svg class="price__button--icon-add-cart" aria-hidden="true" focusable="false" width="20" height="16">
+                        <use xlink:href="img/sprite.svg#add-cart"></use>
+                      </svg>-->
+                      В корзину
+                    </button>
+                  </div>
+                </li>
+                <!--6 карточка-->
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">
+                    <picture>
+                      <source media="(min-width: 1440px)" type="image/webp" srcset="./images/cards/coffee-can-6-desktop.webp 1x, ./images/cards/coffee-can-6-desktop@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="./images/cards/coffee-can-6-desktop.jpg 1x, ./images/cards/coffee-can-6-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" type="image/webp" srcset="./images/cards/coffee-can-6-tablet.webp 1x, ./images/cards/coffee-can-6-tablet@2x.webp 2x">
+                      <source media="(min-width: 768px)" srcset="./images/cards/coffee-can-6-tablet.jpg 1x, ./images/cards/coffee-can-6-tablet@2x.jpg 2x">
+                      <source media="(min-width: 320px)" type="image/webp" srcset="./images/cards/coffee-can-6-mobile.webp 1x, ./images/cards/coffee-can-6-mobile@2x.webp 2x">
+                      <img class="cards__image" src="./images/cards/coffee-can-6-mobile.jpg" srcset="./images/cards/coffee-can-6-mobile@2x.jpg 2x" alt="Кофе с фермерским молоком." width="280" height="280">
+                    </picture>
+                    <span class="catalog__product-name">Декаф Флэт Уайт</span>
+                  </a>
+                  <p class="catalog__item-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <div class="catalog__item-price price">
+                    <span class="price__cost">225₽</span>
+                    <button class="price__button button"><!--
+                      <svg class="price__button--icon-add-cart" aria-hidden="true" focusable="false" width="20" height="16">
+                        <use xlink:href="img/sprite.svg#add-cart"></use>
+                      </svg>-->
+                      В корзину
+                    </button>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <ul class="catalog__list">
-              <li class="catalog__item">
-                <a class="catalog__link" href="#"><!--
-                  <picture>
-                    <source width="130" height="188" media="(min-width: 1440px)" type="image/webp" srcset="img/catalog/coffee-1-desktop.webp 1x, img/catalog/coffee-1-desktop@2x.webp 2x">
-                    <source width="130" height="188" media="(min-width: 768px)" type="image/webp" srcset="img/catalog/coffee-1-tablet.webp 1x, img/catalog/coffee-1-tablet@2x.webp 2x">
-                    <source width="130" height="188" type="image/webp" srcset="img/catalog/coffee-1-mobile.webp 1x, img/catalog/coffee-1-mobile@2x.webp 2x">
-                    <source width="130" height="188" media="(min-width: 1440px)" srcset="img/catalog/coffee-1-desktop.png 1x, img/catalog/coffee-1-desktop@2x.png 2x">
-                    <source width="130" height="188" media="(min-width: 768px)" srcset="img/catalog/coffee-1-tablet.png 1x, img/catalog/coffee-1-tablet@2x.png 2x">
-                    <img class="catalog__item-image" loading="lazy" width="130" height="188" src="img/catalog/coffee-1-mobile.png" srcset="img/catalog/coffee-1-mobile@2x.png 2x" alt="Кофе без кофеина из Эфиопии с натуральным фермерским молоком">
-                  </picture>-->
-                  <span class="catalog__product-name">Декаф Флэт Уайт</span>
-                </a>
-                <p class="catalog__item-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                <div class="catalog__item-price price">
-                  <span class="price__cost">225₽</span>
-                  <button class="price__button button"><!--
-                    <svg class="price__button--icon-add-cart" aria-hidden="true" focusable="false" width="20" height="16">
-                      <use xlink:href="img/sprite.svg#add-cart"></use>
-                    </svg>-->
-                    В корзину
-                  </button>
-                </div>
-              </li>
-              <li class="catalog__item">
-                <a class="catalog__link" href="#"><!--
-                  <picture>
-                    <source width="130" height="188" media="(min-width: 1440px)" type="image/webp" srcset="img/catalog/coffee-2-desktop.webp 1x, img/catalog/coffee-2-desktop@2x.webp 2x">
-                    <source width="130" height="188" media="(min-width: 768px)" type="image/webp" srcset="img/catalog/coffee-2-tablet.webp 1x, img/catalog/coffee-2-tablet@2x.webp 2x">
-                    <source width="130" height="188" type="image/webp" srcset="img/catalog/coffee-2-mobile.webp 1x, img/catalog/coffee-2-mobile@2x.webp 2x">
-                    <source width="130" height="188" media="(min-width: 1440px)" srcset="img/catalog/coffee-2-desktop.png 1x, img/catalog/coffee-2-desktop@2x.png 2x">
-                    <source width="130" height="188" media="(min-width: 768px)" srcset="img/catalog/coffee-2-tablet.png 1x, img/catalog/coffee-2-tablet@2x.png 2x">
-                    <img class="catalog__item-image" loading="lazy" width="130" height="188" src="img/catalog/coffee-2-mobile.png" srcset="img/catalog/coffee-2-mobile@2x.png 2x" alt="Кофе без кофеина из Эфиопии с натуральным фермерским молоком">
-                  </picture>-->
-                  <span class="catalog__product-name">Декаф Флэт Уайт</span>
-                </a>
-                <p class="catalog__item-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                <div class="catalog__item-price price">
-                  <span class="price__cost">225₽</span>
-                  <button class="price__button button"><!--
-                    <svg class="price__button--icon-add-cart" aria-hidden="true" focusable="false" width="20" height="16">
-                      <use xlink:href="img/sprite.svg#add-cart"></use>
-                    </svg>-->
-                    В корзину
-                  </button>
-                </div>
-              </li>
-              <li class="catalog__item">
-                <a class="catalog__link" href="#"><!--
-                  <picture>
-                    <source width="130" height="188" media="(min-width: 1440px)" type="image/webp" srcset="img/catalog/coffee-3-desktop.webp 1x, img/catalog/coffee-3-desktop@2x.webp 2x">
-                    <source width="130" height="188" media="(min-width: 768px)" type="image/webp" srcset="img/catalog/coffee-3-tablet.webp 1x, img/catalog/coffee-3-tablet@2x.webp 2x">
-                    <source width="130" height="188" type="image/webp" srcset="img/catalog/coffee-3-mobile.webp 1x, img/catalog/coffee-3-mobile@2x.webp 2x">
-                    <source width="130" height="188" media="(min-width: 1440px)" srcset="img/catalog/coffee-3-desktop.png 1x, img/catalog/coffee-3-desktop@2x.png 2x">
-                    <source width="130" height="188" media="(min-width: 768px)" srcset="img/catalog/coffee-3-tablet.png 1x, img/catalog/coffee-3-tablet@2x.png 2x">
-                    <img class="catalog__item-image" loading="lazy" width="130" height="188" src="img/catalog/coffee-3-mobile.png" srcset="img/catalog/coffee-3-mobile@2x.png 2x" alt="Кофе без кофеина из Эфиопии с натуральным фермерским молоком">
-                  </picture>-->
-                  <span class="catalog__product-name">Декаф Флэт Уайт</span>
-                </a>
-                <p class="catalog__item-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                <div class="catalog__item-price price">
-                  <span class="price__cost">225₽</span>
-                  <button class="price__button button"><!--
-                    <svg class="price__button--icon-add-cart" aria-hidden="true" focusable="false" width="20" height="16">
-                      <use xlink:href="img/sprite.svg#add-cart"></use>
-                    </svg>-->
-                    В корзину
-                  </button>
-                </div>
-              </li>
-              <li class="catalog__item">
-                <a class="catalog__link" href="#"><!--
-                  <picture>
-                    <source width="130" height="188" media="(min-width: 1440px)" type="image/webp" srcset="img/catalog/coffee-4-desktop.webp 1x, img/catalog/coffee-4-desktop@2x.webp 2x">
-                    <source width="130" height="188" media="(min-width: 768px)" type="image/webp" srcset="img/catalog/coffee-4-tablet.webp 1x, img/catalog/coffee-4-tablet@2x.webp 2x">
-                    <source width="130" height="188" type="image/webp" srcset="img/catalog/coffee-4-mobile.webp 1x, img/catalog/coffee-4-mobile@2x.webp 2x">
-                    <source width="130" height="188" media="(min-width: 1440px)" srcset="img/catalog/coffee-4-desktop.png 1x, img/catalog/coffee-4-desktop@2x.png 2x">
-                    <source width="130" height="188" media="(min-width: 768px)" srcset="img/catalog/coffee-4-tablet.png 1x, img/catalog/coffee-4-tablet@2x.png 2x">
-                    <img class="catalog__item-image" loading="lazy" width="130" height="188" src="img/catalog/coffee-4-mobile.png" srcset="img/catalog/coffee-4-mobile@2x.png 2x" alt="Кофе без кофеина из Эфиопии с натуральным фермерским молоком">
-                  </picture>-->
-                  <span class="catalog__product-name">Декаф Флэт Уайт</span>
-                </a>
-                <p class="catalog__item-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                <div class="catalog__item-price price">
-                  <span class="price__cost">225₽</span>
-                  <button class="price__button button"><!--
-                    <svg class="price__button--icon-add-cart" aria-hidden="true" focusable="false" width="20" height="16">
-                      <use xlink:href="img/sprite.svg#add-cart"></use>
-                    </svg>-->
-                    В корзину
-                  </button>
-                </div>
-              </li>
-              <li class="catalog__item">
-                <a class="catalog__link" href="#"><!--
-                  <picture>
-                    <source width="130" height="188" media="(min-width: 1440px)" type="image/webp" srcset="img/catalog/coffee-5-desktop.webp 1x, img/catalog/coffee-5-desktop@2x.webp 2x">
-                    <source width="130" height="188" media="(min-width: 768px)" type="image/webp" srcset="img/catalog/coffee-5-tablet.webp 1x, img/catalog/coffee-5-tablet@2x.webp 2x">
-                    <source width="130" height="188" type="image/webp" srcset="img/catalog/coffee-5-mobile.webp 1x, img/catalog/coffee-5-mobile@2x.webp 2x">
-                    <source width="130" height="188" media="(min-width: 1440px)" srcset="img/catalog/coffee-5-desktop.png 1x, img/catalog/coffee-5-desktop@2x.png 2x">
-                    <source width="130" height="188" media="(min-width: 768px)" srcset="img/catalog/coffee-5-tablet.png 1x, img/catalog/coffee-5-tablet@2x.png 2x">
-                    <img class="catalog__item-image" loading="lazy" width="130" height="188" src="img/catalog/coffee-5-mobile.png" srcset="img/catalog/coffee-5-mobile@2x.png 2x" alt="Кофе без кофеина из Эфиопии с натуральным фермерским молоком">
-                  </picture>-->
-                  <span class="catalog__product-name">Декаф Флэт Уайт</span>
-                </a>
-                <p class="catalog__item-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                <div class="catalog__item-price price">
-                  <span class="price__cost">225₽</span>
-                  <button class="price__button button"><!--
-                    <svg class="price__button--icon-add-cart" aria-hidden="true" focusable="false" width="20" height="16">
-                      <use xlink:href="img/sprite.svg#add-cart"></use>
-                    </svg>-->
-                    В корзину
-                  </button>
-                </div>
-              </li>
-              <li class="catalog__item">
-                <a class="catalog__link" href="#"><!--
-                  <picture>
-                    <source width="130" height="188" media="(min-width: 1440px)" type="image/webp" srcset="img/catalog/coffee-6-desktop.webp 1x, img/catalog/coffee-6-desktop@2x.webp 2x">
-                    <source width="130" height="188" media="(min-width: 768px)" type="image/webp" srcset="img/catalog/coffee-6-tablet.webp 1x, img/catalog/coffee-6-tablet@2x.webp 2x">
-                    <source width="130" height="188" type="image/webp" srcset="img/catalog/coffee-6-mobile.webp 1x, img/catalog/coffee-6-mobile@2x.webp 2x">
-                    <source width="130" height="188" media="(min-width: 1440px)" srcset="img/catalog/coffee-6-desktop.png 1x, img/catalog/coffee-6-desktop@2x.png 2x">
-                    <source width="130" height="188" media="(min-width: 768px)" srcset="img/catalog/coffee-6-tablet.png 1x, img/catalog/coffee-6-tablet@2x.png 2x">
-                    <img class="catalog__item-image" loading="lazy" width="130" height="188" src="img/catalog/coffee-6-mobile.png" srcset="img/catalog/coffee-6-mobile@2x.png 2x" alt="Кофе без кофеина из Эфиопии с натуральным фермерским молоком">
-                  </picture>-->
-                  <span class="catalog__product-name">Декаф Флэт Уайт</span>
-                </a>
-                <p class="catalog__item-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                <div class="catalog__item-price price">
-                  <span class="price__cost">225₽</span>
-                  <button class="price__button button"><!--
-                    <svg class="price__button--icon-add-cart" aria-hidden="true" focusable="false" width="20" height="16">
-                      <use xlink:href="img/sprite.svg#add-cart"></use>
-                    </svg>-->
-                    В корзину
-                  </button>
-                </div>
-              </li>
-            </ul>
-            <ul class="catalog__pagination pagination">
-              <li class="pagination__item pagination__item--secondary">
-                <a class="pagination__item-button pagination__item-button--prev pagination__item-button--disabled" href="#"><!--
-                  <svg class="pagination__item--icon-prev" width="10" height="10">
-                    <use xlink:href="img/sprite.svg#arrow"></use>
-                  </svg>-->
-                  <span>Назад</span>
-                </a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#">1</a>
-              </li>
-              <li class="pagination__item pagination__item--current">
-                <a class="pagination__link pagination__link--current" href="#">2</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#">3</a>
-              </li>
-              <li class="pagination__item pagination__item--secondary">
-                <a class="pagination__item-button pagination__item-button--next" href="#"><!--
-                  <svg class="pagination__item--icon-next" aria-hidden="true" focusable="false" width="10" height="10">
-                    <use xlink:href="img/sprite.svg#arrow"></use>
-                  </svg>-->
-                  <span>Вперёд</span>
-                </a>
-              </li>
-            </ul>
           </section>
         </div>
       </div>
