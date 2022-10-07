@@ -72,21 +72,34 @@
 
   @media (min-width: $tablet-width) {
     width: 80px;
-    left: 1945px;
   }
 
   &::after {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 1945px;
+  }
 }
 
 .slider__button.swiper-button-prev {
   left: 0;
+  top: 21px;
+
+  @media (min-width: $tablet-width) {
+    top: -72px;
+  }
 }
 
 .slider__button--next.swiper-button-next {
   right: 0;
+  top: 21px;
   transform: scale(-1, 1);
+
+  @media (min-width: $tablet-width) {
+    top: -72px;
+  }
 }
 
 .slider__button[aria-disabled="true"] {

@@ -1,6 +1,5 @@
 .form {
   width: 280px;
-  margin: 0 auto 36px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -13,6 +12,15 @@
     flex-direction: column;
     width: 318px;
   }
+}
+
+.form__title {
+  padding: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-black;
 }
 
 .form__range-scale {
@@ -48,21 +56,22 @@
 .form__button {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  align-items: center;
+  margin: 8px auto 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-between;
     width: 147px;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    justify-content: space-between;
   }
 }
 
 .form__submit {
+  min-width: 160px;
   width: 160px;
   min-height: 45px;
   font-family: inherit;
@@ -92,7 +101,14 @@
 
   @media (min-width: $tablet-width) {
     min-width: 148px;
+    font-weight: 400;
+    min-height: 40px;
     font-size: 14px;
+    line-height: 24px;
+    margin-right: 35px;
+    margin-left: -52px;
+    margin-top: 8px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,7 +123,7 @@
   font-weight: 400;
   text-align: center;
   margin-bottom: 25px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 24px;
   color: $base-primary;
   background-color: $base-white;
@@ -130,8 +146,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-width: 148px;
+    min-width: 138px;
+    font-weight: 400;
+    min-height: 40px;
     font-size: 14px;
+    line-height: 24px;
+    margin-left: -3px;
+    margin-top: 8px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -142,6 +164,10 @@
 .form__item {
   margin-bottom: 21px;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__control-label {
@@ -152,4 +178,13 @@
 
 .form__list {
   padding: 0;
+  margin: 23px 0 24px 34px;
+
+  @media (min-width: $tablet-width) {
+    margin: 21px 0 24px 34px;
+  }
+
+  &--checkbox {
+    margin: 20px 0 24px 55px;
+  }
 }

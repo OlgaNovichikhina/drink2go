@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding: 60px 80px 496px 80px;
+    padding: 57px 80px 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,15 +28,15 @@
 }
 
 .slide__image {
-  margin: 0;
+  width: 280px;
   padding: 0;
-  margin-bottom: 5px;
+  margin: 0 0 1px;
 
   @media (min-width: $tablet-width) {
     width: 476px;
     height: 476px;
     position: absolute;
-    top: 288px;
+    top: 295px;
     left: calc(50% - 238px);
     z-index: 5;
   }
@@ -61,18 +61,23 @@
 }
 
 .slide__title {
-  margin: 0;
-  padding: 0;
+  font-style: normal;
+  font-weight: 700;
   font-size: 36px;
   line-height: 48px;
-  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.02em;
+  padding: 0;
+  margin: 0;
   margin-bottom: 10px;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     font-size: 56px;
     line-height: 80px;
     margin-bottom: 16px;
     letter-spacing: 0.02em;
+    margin-top: 2px;
   }
 }
 
@@ -118,7 +123,7 @@
   font-size: 20px;
   line-height: 32px;
   font-weight: 600;
-  margin-right: 18px;
+  margin-right: 20px;
 
   @media (min-width: $tablet-width) {
     margin-right: 20px;

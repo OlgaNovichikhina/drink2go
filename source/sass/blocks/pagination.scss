@@ -1,3 +1,9 @@
+.pagination {
+  @media (min-width: $tablet-width) {
+    margin-right: -16px;
+  }
+}
+
 .pagination__list {
   margin: 0;
   padding: 0;

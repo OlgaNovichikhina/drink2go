@@ -4,11 +4,12 @@
   margin-left: 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 22px 20px;
+    min-width: 88px;
+    margin: 22px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 22px 0;
+    margin: 0;
   }
 }
 
