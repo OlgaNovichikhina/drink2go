@@ -77,10 +77,6 @@
   &::after {
     display: none;
   }
-
-  @media (min-width: $desktop-width) {
-    left: 1945px;
-  }
 }
 
 .slider__button.swiper-button-prev {
@@ -89,6 +85,10 @@
 
   @media (min-width: $tablet-width) {
     top: -72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 23px;
   }
 }
 
@@ -99,6 +99,10 @@
 
   @media (min-width: $tablet-width) {
     top: -72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 23px;
   }
 }
 

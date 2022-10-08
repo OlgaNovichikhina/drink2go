@@ -1,6 +1,7 @@
 .site-list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -13,10 +14,14 @@
 .site-list__item {
   min-height: 57px;
   position: relative;
-  width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
 
   &:active {
     background-color: $base-secondary;
@@ -56,6 +61,7 @@
 }
 
 .site-list__link {
+  text-decoration: none;
   cursor: pointer;
   font-weight: 500;
   font-size: 12px;
@@ -92,5 +98,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 30px 20px;
+    padding-bottom: 34px;
   }
 }

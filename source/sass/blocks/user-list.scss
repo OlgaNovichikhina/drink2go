@@ -12,33 +12,41 @@
 }
 
 .user-list__item {
-  padding: 22px 14px 22px 22px;
-
-  @media (min-width: $tablet-width) {
-    padding: 32px 19px;
-  }
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 
   &:active {
     background-color: $base-secondary;
   }
-
-  @media (min-width: $desktop-width) {
-    padding: 30px 19px;
-  }
-
 }
 
 .user-list__link {
+  text-decoration: none;
+  padding: 22px 14px 22px 22px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: $base-black;
+  cursor: pointer;
 
   &:hover,
   &:focus-visible {
     color: $base-primary;
     outline: none;
     fill: $base-primary;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 21px;
+    margin-left: 18px;
   }
 }
 

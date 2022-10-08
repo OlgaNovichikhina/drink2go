@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding: 50px 20px 90px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 40px 120px;
+  }
 }
 
 .catalog__promo {
@@ -33,7 +37,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
   }
 }
 
