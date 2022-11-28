@@ -89,12 +89,7 @@
 
 .slider__button--next.swiper-button-next {
   right: 0;
-  top: 21px;
   transform: scale(-1, 1);
-
-  @media (min-width: $tablet-width) {
-    top: -72px;
-  }
 }
 
 .slider__button[aria-disabled="true"] {
