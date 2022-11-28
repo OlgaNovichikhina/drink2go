@@ -22,7 +22,7 @@
   padding: 0;
   width: 60px;
   height: 60px;
-  background-image: url("../../images/icon-burger.svg");
+  background-image: url("../images/icon-burger.svg");
   background-color: transparent;
   background-position: center center;
   background-repeat: no-repeat;
@@ -66,7 +66,7 @@
 }
 
 .header__navigation--opened .header__toggle {
-  background-image: url("../../images/icon-cross.svg");
+  background-image: url("../images/icon-cross.svg");
 
   @media (max-width: $mobile-width-only) {
     .header__navigation--closed .header__main-nav {
