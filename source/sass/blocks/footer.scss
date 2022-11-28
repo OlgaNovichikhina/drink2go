@@ -1,11 +1,6 @@
 .footer {
   margin: 0 auto;
-  background-color: $base-white;
-}
-
-.footer__container {
-  width: 320px;
-  margin: 0 auto;
+  min-width: 320px;
   background-color: $base-white;
 
   @media (min-width: $tablet-width) {
@@ -18,12 +13,9 @@
 }
 
 .footer__wrapper {
-  min-width: 320px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-top: -5px;
-  padding-top: 5px;
 
   @media (min-width: $tablet-width) {
     padding: 40px 20px;
@@ -36,8 +28,8 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 4px;
-    padding: 39px 40px 23px;
+    row-gap: 12px;
+    padding: 39px 40px;
   }
 }
 
@@ -65,7 +57,7 @@
 .footer__section-item--logo-and-social {
   border-top: none;
   flex-direction: row;
-  margin-top: 16px;
+  margin-top: 20px;
   margin-bottom: 16px;
   justify-content: space-between;
 
@@ -97,10 +89,8 @@
 }
 
 .footer__logo-link {
-  text-decoration: none;
-
   &:focus-visible {
-    outline: $primary-darker;
+    outline: none;
   }
 }
 
@@ -122,7 +112,7 @@
   @media (min-width: $desktop-width) {
     display: block;
     margin-bottom: 40px;
-    margin-top: 6px;
+    margin-top: 8px;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -186,8 +176,6 @@
 }
 
 .footer__phone-link {
-  text-decoration: none;
-
   &:hover,
   &:focus-visible {
     color: $base-primary;
@@ -207,22 +195,21 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 11px;
+  padding-top: 4px;
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
-    padding-top: 8px;
+    padding-top: 2px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 8px;
+    padding-top: 0;
     margin-bottom: 0;
   }
 }
 
 .footer__link--copyright {
-  text-decoration: none;
   display: flex;
   text-transform: none;
   font-weight: 400;
@@ -235,21 +222,15 @@
   @media (min-width: $tablet-width) {
     margin-top: 0;
   }
-}
 
-.footer__link--copyright:hover,
-.footer__link--copyright:focus-visible {
-  .footer__copyright-text,
-  .footer__copyright-icon {
+  &:hover,
+  &:focus-visible,
+  &:focus {
     outline: none;
     color: $base-primary;
   }
-}
 
-.footer__link--copyright:active {
-  .footer__copyright-text,
-  .footer__copyright-icon {
-    outline: none;
+  &:active {
     color: $primary-darker;
   }
 }
@@ -259,7 +240,6 @@
   font-size: 12px;
   line-height: 16px;
   color: $base-grey;
-  text-transform: inherit;
 }
 
 .footer__copyright-icon {

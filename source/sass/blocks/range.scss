@@ -11,7 +11,6 @@
 
   @media (min-width: $desktop-width) {
     width: 318px;
-    margin-left: 0;
   }
 }
 
@@ -161,6 +160,11 @@
   }
 }
 
+.range__input[type="number"]::-webkit-outer-spin-button,
+.range__input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;/* stylelint-disable-line */ /* Скрываем слайдер, чтобы иметь возможность создать пользовательский слайдер. */
+}
+
 .range__input[type="number"] {
-  appearance: textfield;
+  -moz-appearance: textfield;/* stylelint-disable-line */
 }

@@ -9,12 +9,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 39px 0 0;
+    margin: 0;
   }
-}
-
-.logo__link:focus-visible {
-  outline: $primary-darker;
 }
 
 .logo__img {
