@@ -45,7 +45,7 @@ L.tileLayer(
 ).addTo(map);
 
 const mainPinIcon = L.icon({
-  iconUrl: '../images/map-pin.png',
+  iconUrl: './images/map-pin.png',
   iconSize: [38, 50],
   iconAnchor: [19, 50],
 });
