@@ -85,11 +85,6 @@
 
 .slider__button.swiper-button-prev {
   left: 0;
-  top: 21px;
-
-  @media (min-width: $tablet-width) {
-    top: -72px;
-  }
 }
 
 .slider__button--next.swiper-button-next {
